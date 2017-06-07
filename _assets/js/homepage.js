@@ -44,7 +44,7 @@ new Vue({
 
 
 require('jquery');
-// require('plugins/bootstrap/js/bootstrap.js');
+require('bootstrap/dist/js/bootstrap.js');
 // require('plugins/owl-carousel/owl-carousel/owl.carousel.js');
 // require('plugins/smoothScroll.js');
 // require('./owl');
