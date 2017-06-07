@@ -1,0 +1,163 @@
+/***************************************************
+* ---- 1 TOPBAR -------
+****************************************************/
+
+.topbar {
+    background: @isabelline;
+}
+.topbar .container,
+.topbar .container-fluid {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Topbar List */
+.topbar-list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    float: left;
+
+    > li {
+        color: @davy-grey;
+        font-size: 10px;
+        padding: 7px 12px;
+        position: relative;
+        letter-spacing: 1px;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    > li:before {
+        top: 11px;
+        left: -3px;
+        width: 1px;
+        height: 9px;
+        content: ' ';
+        background: @davy-grey;
+        position: absolute;
+    }
+
+    li:last-child {
+        padding-right: 0;
+    }
+
+    li {
+        a {
+            color: @davy-grey;
+        }
+        a:hover {
+            color: @charleston-green;
+            text-decoration: none;
+        }
+     }
+
+    .topbar-dropdown {
+        top: 23px;
+        left: -3px;
+        z-index: 1;
+        display: none;
+        padding: 7px 0;
+        list-style: none;
+        min-width: 125px;
+        background: @isabelline;
+        position: absolute;
+
+        li {
+            a {
+                color: @davy-grey;
+                display: block;
+                font-size: 10px;
+                padding: 5px 15px;
+                margin-bottom: 1px;
+                text-transform: uppercase;
+            }
+            a:hover {
+                color: @charleston-green;
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+
+.topbar-log_reg li.home:before {
+    display: none;
+}
+
+.topbar-time {
+    color: @davy-grey;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1px;
+    padding: 7px 12px 7px 0;
+    float: left;
+}
+
+
+@media (min-width: 992px) {
+    /*Topbar v2*/
+    .header-fixed .header-v8.header-fixed-shrink .topbar {
+	margin-top: -40px;
+    }
+}
+
+
+/***************************************************
+* ---- 3 NAVBAR -------
+****************************************************/
+
+/*Navbar*/
+.header-v8 {
+    background: #fff;
+    position: relative;
+    box-shadow: 0 0 5px #bbb;
+}
+
+@media (max-width: 991px) {
+    .header-v8 {
+	position: static;
+    }
+}
+
+
+/*******************************************************
+--------- 9 COLORS -------------------------------------
+*******************************************************/
+
+/*--------------------------------------------------
+[9. Header Theme Color]
+----------------------------------------------------*/
+.header-v8 .dropdown-menu {
+	border-top: solid 3px @cornell-red;
+}
+.header-v8 .dropdown-menu .active > a,
+.header-v8 .dropdown-menu li > a:hover {
+	color: @cornell-red;
+}
+.header-v8 .navbar-nav .open .dropdown-menu > li > a:hover,
+.header-v8 .navbar-nav .open .dropdown-menu > li > a:focus {
+	color: @cornell-red;
+}
+.header-v8 .navbar-nav .open .dropdown-menu > .active > a,
+.header-v8 .navbar-nav .open .dropdown-menu > .active > a:hover,
+.header-v8 .navbar-nav .open .dropdown-menu > .active > a:focus {
+	color: @cornell-red;
+}
+
+.header-v8 .navbar-nav .open .dropdown-menu > .disabled > a,
+.header-v8 .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.header-v8 .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+	color: @cornell-red;
+}
+.header-v8 .navbar-nav > li > a:hover {
+	color: @cornell-red;
+}
+.header-v8 .navbar-nav > .active > a,
+.header-v8 .navbar-nav > .active > a:hover,
+.header-v8 .navbar-nav > .active > a:focus {
+	color: @cornell-red !important;
+}
+.header-v8 .mega-menu .mega-menu-fullwidth .dropdown-link-list li a:hover {
+	color: @cornell-red;
+}
